@@ -18,7 +18,7 @@ Buat direktori baru untuk proyek Anda:
 mkdir proyek-web-php-mysql
 cd proyek-web-php-mysql
 ```
-### 2. Struktur Direktori
+### 2. Buat Struktur Direktori
 Buat struktur direktori sebagai berikut ini:
 ```bash
 /proyek-web-php-mysql
@@ -64,4 +64,23 @@ volumes:
 
 networks:
   app-network:
+```
+### 4. Buat File index.php
+Buat file index.php di dalam direktori src/ dengan konten berikut:
+```bash
+<?php
+$servername = "mysql-db";
+$username = "user";
+$password = "password";
+$database = "my_database";
+
+// Membuat koneksi
+$conn = new mysqli($servername, $username, $password, $database);
+
+// Memeriksa koneksi
+if ($conn->connect_error) {
+    die("Koneksi gagal: " . $conn->connect_error);
+}
+echo "Koneksi berhasil!";
+?>
 ```
