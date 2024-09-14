@@ -105,10 +105,12 @@ Beberapa alat yang diperlukan untuk membantu pengembangan web:
 
 - Teks Editor: Notepad++, Sublime Text, Visual Studio Code, atau Atom.
 - Browser Web: Chrome, Firefox, Opera, atau Edge.
-- Server Lokal (opsional): XAMPP, LAMPP, WAMP, atau menggunakan Docker untuk menjalankan server lokal jika diperlukan untuk proyek backend.
+- Server Lokal (opsional): XAMPP, LAMPP, WAMP,
+- Docker untuk menjalankan server lokal jika diperlukan untuk proyek backend.
 
 ## Langkah-Langkah Belajar
-1. Pelajari HTML: Mulailah dengan mempelajari elemen-elemen dasar HTML seperti heading, paragraf, tautan, tabel, dan formulir.
-2. Pelajari CSS: Setelah menguasai HTML, pelajari CSS untuk menata tampilan situs web Anda.
-3. Pelajari JavaScript: Gunakan JavaScript untuk menambahkan interaksi dan dinamika pada situs web.
-4. Pelajari Server-side Programming: Setelah menguasai frontend, mulailah belajar bahasa backend seperti PHP, Node.js, atau Python untuk membangun aplikasi web dinamis.
+1. Belajar HTML: Mulailah dengan mempelajari elemen-elemen dasar HTML seperti heading, paragraf, tautan, tabel, dan formulir.
+2. Belajar CSS: Setelah menguasai HTML, pelajari CSS untuk menata tampilan situs web Anda.
+3. Belajar JavaScript: Gunakan JavaScript untuk menambahkan interaksi dan dinamika pada situs web.
+4. Belajar Server-side Programming: Setelah menguasai frontend, mulailah belajar bahasa backend seperti PHP, Node.js, atau Python untuk membangun aplikasi web dinamis.
+5. Belajar framework PHP seperti Code Igniter dan Laravel
