@@ -131,4 +131,4 @@ Untuk menghentikan dan menghapus semua container yang berjalan:
 ```bash
 docker-compose down
 ```
-Perintah ini akan menghentikan container PHP dan MySQL, serta menghapusnya.
+Perintah ini akan menghentikan container PHP dan MySQL tanpa menghapus volume database.
