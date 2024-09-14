@@ -8,11 +8,15 @@ Repositori ini memuat panduan belajar pemrograman web untuk pemula! Panduan ini 
    - [HTML](#html)
    - [CSS](#css)
    - [JavaScript](#javascript)
-3. [Alat yang Diperlukan](#alat-yang-diperlukan)
-4. [Langkah-Langkah Belajar](#langkah-langkah-belajar)
-5. [Membuat Proyek Web Sederhana](#membuat-proyek-web-sederhana)
-6. [Tips Belajar dan Sumber Daya](#tips-belajar-dan-sumber-daya)
-
+3. [Teknologi Dasar Server Side Scripting](#teknologi-dasar-server-side-scripting)
+   - [PHP](#php)
+4. [Framework](#framework)
+   - [Laravel](#laravel)
+   - [Code Igniter](#code-igniter)
+5. [Alat Pendukung](#alat-pendukung)
+6. [Langkah-Langkah Belajar](#langkah-langkah-belajar)
+7. [Membuat Proyek Web Sederhana](#membuat-proyek-web-sederhana)
+8. [Bahan bacaan](#bahan-bacaan)
 ---
 
 ## Pengantar
@@ -96,3 +100,14 @@ Nama file: `index.html`
   </body>
 </html>
 ```
+## Alat Pendukung
+Beberapa alat yang diperlukan untuk membantu pengembangan web:
+
+Teks Editor: Notepad++, Sublime Text, Visual Studio Code, atau Atom.
+Browser Web: Chrome, Firefox, Opera, atau Edge.
+Server Lokal (opsional): XAMPP, LAMPP, WAMP, atau menggunakan Docker untuk menjalankan server lokal jika diperlukan untuk proyek backend.
+Langkah-Langkah Belajar
+Pelajari HTML: Mulailah dengan mempelajari elemen-elemen dasar HTML seperti heading, paragraf, tautan, tabel, dan formulir.
+Pelajari CSS: Setelah menguasai HTML, pelajari CSS untuk menata tampilan situs web Anda.
+Pelajari JavaScript: Gunakan JavaScript untuk menambahkan interaksi dan dinamika pada situs web.
+Pelajari Server-side Programming: Setelah menguasai frontend, mulailah belajar bahasa backend seperti PHP, Node.js, atau Python untuk membangun aplikasi web dinamis.
