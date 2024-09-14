@@ -4,7 +4,7 @@ Repositori ini memuat panduan belajar pemrograman web untuk pemula! Panduan ini 
 
 ## Daftar Isi
 1. [Pengantar](#pengantar)
-2. [Teknologi Dasar Client Side Scripting](#teknologi-dasar-client side-scripting)
+2. [Teknologi Dasar Client Side Scripting](#teknologi-dasar-client-side-scripting)
    - [HTML](#html)
    - [CSS](#css)
    - [JavaScript](#javascript)
