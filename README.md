@@ -29,10 +29,10 @@ HTML (HyperText Markup Language) adalah bahasa markup yang digunakan untuk membu
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Halaman Web Pertama Saya</title>
+    <title>Web Pertama</title>
 </head>
 <body>
-    <h1>Selamat Datang!</h1>
+    <h1>Horreeee!</h1>
     <p>Ini adalah halaman web pertama saya menggunakan HTML.</p>
 </body>
 </html>
@@ -43,9 +43,13 @@ CSS (Cascading Style Sheets) adalah bahasa yang digunakan untuk menata tampilan 
 
 #### Contoh Kode CSS Sederhana:
 ```css
+.title {
+	color: #5C6AC4;
+}
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
+    padding: 25px;
 }
 
 h1 {
@@ -74,4 +78,19 @@ showTime();
 setInterval(function () {
 	showTime();
 }, 1000);
+```
+### Contoh kombinasi HTML-CSS-Javascript
+```
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hello, World!</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+      <h1 class="title">Hello World! </h1>
+      <p id="currentTime"></p>
+      <script src="script.js"></script>
+  </body>
+</html>
 ```
