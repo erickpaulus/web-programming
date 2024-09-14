@@ -106,7 +106,7 @@ Beberapa alat yang diperlukan untuk membantu pengembangan web:
 - Teks Editor: Notepad++, Sublime Text, Visual Studio Code, atau Atom.
 - Browser Web: Chrome, Firefox, Opera, atau Edge.
 - Server Lokal (opsional): XAMPP, LAMPP, WAMP,
-- Docker untuk menjalankan server lokal jika diperlukan untuk proyek backend.
+- Docker untuk menjalankan server lokal jika diperlukan untuk proyek backend. [Panduan](https://github.com/erickpaulus/web-programming/blob/main/Docker.md)
 
 ## Langkah-Langkah Belajar
 1. Belajar HTML: Mulailah dengan mempelajari elemen-elemen dasar HTML seperti heading, paragraf, tautan, tabel, dan formulir.
