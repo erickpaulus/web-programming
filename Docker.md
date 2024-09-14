@@ -100,7 +100,7 @@ Buka browser Anda dan akses:
 http://localhost:8080
 ```
 Anda akan melihat pesan "Koneksi berhasil!" jika PHP berhasil terhubung ke database MySQL.
-```
+
 ### 7. Mengelola MySQL
 Anda bisa mengakses MySQL melalui container menggunakan perintah berikut:
 ```bash
@@ -108,7 +108,25 @@ docker exec -it mysql-db mysql -u root -p
 ```
 Masukkan password rootpassword (yang telah Anda atur di docker-compose.yml).
 
-### 8. Hentikan Container
+### 8. Tambah phpMyAdmin
+Tambahkan konten docker-compose.yml dengan perintah berikut :
+```bash
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    container_name: phpmyadmin
+    environment:
+      PMA_HOST: db
+      MYSQL_ROOT_PASSWORD: rootpassword
+    ports:
+      - "8081:80"
+    depends_on:
+      - db
+    networks:
+      - app-network
+```
+cara akses akses  phpMyAdmin pada alamat http://localhost:8081.
+
+### 9. Hentikan Container
 Untuk menghentikan dan menghapus semua container yang berjalan:
 ```bash
 docker-compose down
