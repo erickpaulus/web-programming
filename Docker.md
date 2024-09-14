@@ -51,7 +51,7 @@ services:
     container_name: mysql-db
     environment:
       MYSQL_ROOT_PASSWORD: rootpassword
-      MYSQL_DATABASE: my_database
+      MYSQL_DATABASE: db_dia
       MYSQL_USER: user
       MYSQL_PASSWORD: password
     volumes:
@@ -72,7 +72,7 @@ Buat file index.php di dalam direktori src/ dengan konten berikut:
 $servername = "mysql-db";
 $username = "user";
 $password = "password";
-$database = "my_database";
+$database = "db_dia";
 
 // Membuat koneksi
 $conn = new mysqli($servername, $username, $password, $database);
@@ -84,3 +84,33 @@ if ($conn->connect_error) {
 echo "Koneksi berhasil!";
 ?>
 ```
+### 5. Jalankan Docker Compose
+Jalankan layanan Docker dengan perintah berikut di direktori proyek Anda:
+```bash
+docker-compose up -d
+```
+Perintah ini akan:
+
+- Unduh (download) image PHP dan MySQL dari Docker Hub.
+- Menjalankan container PHP-Apache pada port 8080 dan MySQL pada port internal 3306.
+- Membuat jaringan app-network untuk komunikasi antara container.
+### 6. Akses Aplikasi
+Buka browser Anda dan akses:
+```bash
+http://localhost:8080
+```
+Anda akan melihat pesan "Koneksi berhasil!" jika PHP berhasil terhubung ke database MySQL.
+```
+### 7. Mengelola MySQL
+Anda bisa mengakses MySQL melalui container menggunakan perintah berikut:
+```bash
+docker exec -it mysql-db mysql -u root -p
+```
+Masukkan password rootpassword (yang telah Anda atur di docker-compose.yml).
+
+### 8. Hentikan Container
+Untuk menghentikan dan menghapus semua container yang berjalan:
+```bash
+docker-compose down
+```
+Perintah ini akan menghentikan container PHP dan MySQL, serta menghapusnya.
