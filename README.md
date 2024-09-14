@@ -17,7 +17,7 @@ Repositori ini memuat panduan belajar pemrograman web untuk pemula! Panduan ini 
 
 ## Pengantar
 
-Pemrograman web berkaitan dengan proses pembuatan dan pemeliharaan situs web. Ini melibatkan berbagai teknologi dan keterampilan, mulai dari merancang tampilan (frontend) hingga memproses data di server (backend). Disini, kita belajar client side scripting untuk frontend dan server side scripting untuk backend serta alat-alat pendukung untuk pengembangan aplikasi web.
+Pemrograman web berkaitan dengan proses pembuatan dan pemeliharaan situs web. Ini melibatkan berbagai teknologi dan keterampilan, mulai dari merancang tampilan (frontend) hingga memproses data di server (backend). Disini, kita belajar client side scripting untuk frontend dan server side scripting untuk backend serta alat-alat pendukung lainnya untuk pengembangan aplikasi web.
 
 ## Teknologi Dasar Client Side Scripting
 
@@ -43,7 +43,6 @@ CSS (Cascading Style Sheets) adalah bahasa yang digunakan untuk menata tampilan 
 
 #### Contoh Kode CSS Sederhana:
 ```css
-Copy code
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
@@ -56,4 +55,23 @@ h1 {
 p {
     color: #666;
 }
+```
+###JavaScript
+JavaScript adalah bahasa pemrograman yang digunakan untuk membuat halaman web lebih interaktif dan dinamis. Dengan JavaScript, Anda bisa membuat animasi, validasi form, dan interaksi pengguna lainnya.
+
+### Contoh Kode JavaScript Sederhana:
+```javascript
+
+document.addEventListener('DOMContentLoaded', function() {
+    alert('Selamat datang di halaman web saya!');
+});
+```
+```
+function showTime() {
+	document.getElementById('currentTime').innerHTML = new Date().toUTCString();
+}
+showTime();
+setInterval(function () {
+	showTime();
+}, 1000);
 ```
