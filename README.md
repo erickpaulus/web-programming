@@ -42,6 +42,7 @@ HTML (HyperText Markup Language) adalah bahasa markup yang digunakan untuk membu
 CSS (Cascading Style Sheets) adalah bahasa yang digunakan untuk menata tampilan halaman web yang dibuat dengan HTML. CSS mengontrol warna, tata letak, font, dan tampilan elemen-elemen web lainnya.
 
 #### Contoh Kode CSS Sederhana:
+Nama file: `styles.css`
 ```css
 .title {
 	color: #5C6AC4;
@@ -65,11 +66,11 @@ JavaScript adalah bahasa pemrograman yang digunakan untuk membuat halaman web le
 
 ### Contoh Kode JavaScript Sederhana:
 ```javascript
-
 document.addEventListener('DOMContentLoaded', function() {
     alert('Selamat datang di halaman web saya!');
 });
 ```
+Nama file: `script.js`
 ```
 function showTime() {
 	document.getElementById('currentTime').innerHTML = new Date().toUTCString();
@@ -80,6 +81,7 @@ setInterval(function () {
 }, 1000);
 ```
 ### Contoh kombinasi HTML-CSS-Javascript
+Nama file: `index.html`
 ```
 <!DOCTYPE html>
 <html>
