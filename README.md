@@ -114,3 +114,10 @@ Beberapa alat yang diperlukan untuk membantu pengembangan web:
 3. Belajar JavaScript: Gunakan JavaScript untuk menambahkan interaksi dan dinamika pada situs web.
 4. Belajar Server-side Programming: Setelah menguasai frontend, mulailah belajar bahasa backend seperti PHP, Node.js, atau Python untuk membangun aplikasi web dinamis.
 5. Belajar framework PHP seperti Code Igniter dan Laravel
+
+## Bahan bacaan:
+1. Online
+   - MDN Web Docs
+   - W3Schools
+   - freeCodeCamp
+2. Bergabung dengan komunitas: Bergabunglah dengan forum atau komunitas online seperti Stack Overflow, GitHub, atau forum lokal untuk belajar dan berbagi pengalaman.
