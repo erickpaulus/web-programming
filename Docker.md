@@ -5,8 +5,8 @@ Panduan ini menjelaskan cara mengatur lingkungan **PHP** dan **MySQL** menggunak
 ## Prasyarat
 
 Sebelum memulai, pastikan Anda telah menginstal:
-1. [Docker](https://docs.docker.com/get-docker/){:target="_blank"}
-2. [Docker Compose](https://docs.docker.com/compose/install/)
+1. <a href="https://docs.docker.com/get-docker/" target="_blank">Docker</a>
+2. <a href="[https://docs.docker.com/get-docker/](https://docs.docker.com/compose/install/)" target="_blank">Docker Compose</a>
 
 ## Langkah-Langkah
 
