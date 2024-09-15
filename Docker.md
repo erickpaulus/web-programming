@@ -70,10 +70,10 @@ networks:
 Buat file index.php di dalam direktori src/ dengan konten berikut:
 ```bash
 <?php
-$servername = "mysql-db";
-$username = "user";
-$password = "password";
-$database = "db_dia";
+$servername = getenv('MYSQL_SERVER');
+$username = getenv('MYSQL_USER');
+$password = getenv('MYSQL_PASSWORD');
+$database = getenv('MYSQL_DATABASE');
 
 // Membuat koneksi
 $conn = new mysqli($servername, $username, $password, $database);
@@ -84,6 +84,7 @@ if ($conn->connect_error) {
 }
 echo "Koneksi berhasil!";
 ?>
+
 ```
 ### 5. Jalankan Docker Compose
 Jalankan layanan Docker dengan perintah berikut di direktori proyek Anda:
