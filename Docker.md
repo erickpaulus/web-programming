@@ -21,15 +21,6 @@ cd proyek-web-php-mysql
 ### 2. Buat Struktur Direktori
 Buat struktur direktori sebagai berikut ini:
 ```bash
-/proyek-web-php-mysql
-   ├── docker-compose.yml
-   └── src
-       └── index.php
-```
-folder src memuat file html, javascript, css, dan php.
-### 3. Tulis File docker-compose.yml
-Tulis file docker-compose.yml di dalam direktori proyek Anda:
-```bash
 version: '3.8'
 
 services:
@@ -49,7 +40,7 @@ services:
   # MySQL
   db:
     image: mysql:5.7
-    container_name: mysql-db
+    container_name: mysql-proyek-db
     environment:
       MYSQL_ROOT_PASSWORD: rootpassword
       MYSQL_DATABASE: db_dia
