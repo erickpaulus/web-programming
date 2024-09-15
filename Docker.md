@@ -27,7 +27,7 @@ services:
   # PHP dan Apache
   web:
     image: php:8.0-apache
-    container_name: php-app
+    container_name: php-proyek-app
     volumes:
       - ./src:/var/www/html
     ports:
