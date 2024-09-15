@@ -26,6 +26,7 @@ Buat struktur direktori sebagai berikut ini:
    └── src
        └── index.php
 ```
+folder src memuat file html, javascript, css, dan php.
 ### 3. Tulis File docker-compose.yml
 Tulis file docker-compose.yml di dalam direktori proyek Anda:
 ```bash
