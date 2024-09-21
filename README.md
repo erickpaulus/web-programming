@@ -65,9 +65,16 @@ p {
     color: #666;
 }
 ```
-###JavaScript
-JavaScript adalah bahasa pemrograman yang digunakan untuk membuat halaman web lebih interaktif dan dinamis. Dengan JavaScript, Anda bisa membuat animasi, validasi form, dan interaksi pengguna lainnya.
+### JavaScript
+JavaScript adalah bahasa pemrograman yang mampu berjalan di client-side atau server-side untuk membuat halaman web lebih interaktif. JavaScript, HTML dan CSS adalah tiga sekawan, di mana HTML digunakan untuk struktur, CSS untuk gaya, dan JavaScript untuk fungsi dan interaksi.
 
+Dengan JavaScript, kita dapat:
+- Manipulasi DOM (Document Object Model): Mengubah konten atau struktur halaman secara dinamis.
+- Validasi Form: Memeriksa input pengguna di formulir sebelum dikirim ke server.
+- Interaksi Asynchronous (AJAX): Mengambil data dari server tanpa me-reload halaman.
+- Pengaturan Event: Menangani scroll, klik, hover, dan interaksi pengguna lainnya.
+- Animasi dan Efek Visual: Membuat elemen halaman bergerak atau bertransisi.
+  
 ### Contoh Kode JavaScript Sederhana:
 ```javascript
 document.addEventListener('DOMContentLoaded', function() {
