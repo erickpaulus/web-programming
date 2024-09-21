@@ -89,15 +89,15 @@ Framework Backend Populer:
 - NestJS: Framework backend yang berfokus pada skalabilitas dan efisiensi dengan struktur modular.
 
 Database dengan JavaScript: 
-Beberapa database dapat diintegrasikan langsung dengan JavaScript di backend, dan beberapa framework seperti Mongoose memungkinkan kita menggunakan database seperti MongoDB dengan mudah. Anda juga bisa menggunakan SQL databases (PostgreSQL, MySQL) melalui ORM (Object-Relational Mapping) seperti Sequelize.
+- Beberapa database dapat diintegrasikan langsung dengan JavaScript di backend,
+- Beberapa framework seperti Mongoose memungkinkan kita menggunakan database seperti MongoDB dengan mudah.
+- Anda juga bisa menggunakan SQL databases (PostgreSQL, MySQL) melalui ORM (Object-Relational Mapping) seperti Sequelize.
 
-Contoh Teknologi FullStack  JavaScript
 Salah satu contoh stack populer untuk aplikasi full JavaScript adalah MERN:
-
-M: MongoDB (NoSQL database)
-E: Express.js (Framework backend Node.js)
-R: React.js (Library frontend)
-N: Node.js (Runtime JavaScript di server)
+- M: MongoDB (NoSQL database)
+- E: Express.js (Framework backend Node.js)
+- R: React.js (Library frontend)
+- N: Node.js (Runtime JavaScript di server)
 
 ### Contoh Kode JavaScript Sederhana:
 ```javascript
