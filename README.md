@@ -74,7 +74,29 @@ Dengan JavaScript, kita dapat:
 - Interaksi Asynchronous (AJAX): Mengambil data dari server tanpa me-reload halaman.
 - Pengaturan Event: Menangani scroll, klik, hover, dan interaksi pengguna lainnya.
 - Animasi dan Efek Visual: Membuat elemen halaman bergerak atau bertransisi.
-  
+
+Berkat perkembangan ekosistem JavaScript, kita dapat  mengembangkan seluruh bagian aplikasi web hanya dengan menggunakan JavaScript. Ini dikenal sebagai pendekatan full-stack JavaScript.
+
+Library/Framework Frontend Populer:
+React: Library yang dikembangkan oleh Facebook untuk membangun UI dinamis dengan pendekatan komponen.
+Vue.js: Framework progresif yang mudah diintegrasikan dengan proyek yang sudah ada untuk membangun antarmuka interaktif.
+Angular: Framework yang dikembangkan oleh Google untuk membuat aplikasi web berskala besar dengan pendekatan MVC.
+Backend (Server-side) dengan JavaScript: Dengan Node.js, JavaScript dapat digunakan di server. Node.js memungkinkan pengembangan server yang cepat dan ringan menggunakan JavaScript.
+
+Framework Backend Populer:
+Express.js: Framework minimalis yang sering digunakan bersama Node.js untuk membangun API dan aplikasi web.
+Next.js: Framework berbasis React yang mendukung rendering sisi server dan API backend.
+NestJS: Framework backend yang berfokus pada skalabilitas dan efisiensi dengan struktur modular.
+Database dengan JavaScript: Beberapa database dapat diintegrasikan langsung dengan JavaScript di backend, dan beberapa framework seperti Mongoose memungkinkan kita menggunakan database seperti MongoDB dengan mudah. Anda juga bisa menggunakan SQL databases (PostgreSQL, MySQL) melalui ORM (Object-Relational Mapping) seperti Sequelize.
+
+Contoh Teknologi FullStack  JavaScript
+Salah satu contoh stack populer untuk aplikasi full JavaScript adalah MERN:
+
+M: MongoDB (NoSQL database)
+E: Express.js (Framework backend Node.js)
+R: React.js (Library frontend)
+N: Node.js (Runtime JavaScript di server)
+
 ### Contoh Kode JavaScript Sederhana:
 ```javascript
 document.addEventListener('DOMContentLoaded', function() {
