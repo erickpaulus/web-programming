@@ -131,6 +131,18 @@ Nama file: `index.html`
   </body>
 </html>
 ```
+
+### PHP
+PHP (Hypertext Preprocessor) adalah bahasa pemrograman server-side untuk pengembangan web. Dengan PHP, halaman web dapat dikelolah secara lebih dinamis.  PHP mengolah data di server, kemudian mengirimkan hasilnya ke browser pengguna dalam bentuk HTML.
+
+Fungsi utama PHP dalam pengembangan web:
+- Pengolahan Formulir: Memproses input yang dikirim pengguna melalui form HTML.
+- Interaksi dengan Database: Menghubungkan, mengambil, dan menyimpan data di database seperti MySQL.
+- Konten Dinamis: Menghasilkan konten yang berubah berdasarkan input atau kondisi tertentu.
+- Manajemen Session: Menyimpan informasi pengguna seperti login.
+- Integrasi dengan HTML: PHP mudah diintegrasikan ke dalam HTML untuk menambahkan logika server-side ke halaman web
+
+
 ## Alat Pendukung
 Beberapa alat yang diperlukan untuk membantu pengembangan web:
 
