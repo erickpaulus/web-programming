@@ -148,6 +148,24 @@ Fungsi utama PHP dalam pengembangan web:
 ## Database
 Database adalah kumpulan terstruktur dari data yang disimpan dan diorganisasikan untuk memudahkan akses, pengelolaan, dan pembaruan. Data dalam database bisa berupa informasi apa pun, seperti nama pengguna, alamat email, transaksi penjualan, inventaris barang, dan sebagainya.
 
+Karakteristik Utama Database:
+- Penyimpanan Terstruktur: Database dirancang untuk menyimpan data secara terstruktur, biasanya dalam bentuk tabel yang terdiri dari baris dan kolom (relasional) atau dalam format lain seperti dokumen atau key-value (non-relasional).
+- Manajemen Data: Database memungkinkan pengguna untuk menambah, menghapus, memperbarui, atau menelusuri data dengan mudah menggunakan perintah yang disediakan.
+- Integritas Data: Database menjamin bahwa data yang disimpan akurat dan sesuai dengan aturan tertentu (misalnya, kunci unik atau kunci asing).
+- Keamanan: Akses ke database dapat diatur dengan izin tertentu, memastikan bahwa hanya pengguna yang berhak yang dapat melihat atau mengubah data.
+
+Jenis-Jenis Database:
+1. Database Relasional (RDBMS):
+- Menggunakan tabel untuk menyimpan data.
+- Setiap tabel memiliki baris (record) dan kolom (field).
+- Menggunakan SQL (Structured Query Language) untuk melakukan operasi pada data.
+- Contoh: MySQL, PostgreSQL, Microsoft SQL Server, Oracle.
+
+2. Database Non-Relasional (NoSQL):
+- Tidak menggunakan tabel relasional; bisa berbentuk dokumen, key-value, graph, atau wide-column.
+- Cocok untuk data yang tidak terstruktur atau semi-terstruktur.
+- Contoh: MongoDB, Cassandra, Redis.
+
 ### MySQL
 ## Session dan Cookie
 Session dan Cookie merupkan dua metode yang berfungsi untuk menampung informasi tentang pengguna dalam suatu aplikasi web di PHP. Kedua metode ini sering digunakan bersamaan, namun perbedaan utama di antara keduanya adalah cara penyimpanan dan penggunaannya.
