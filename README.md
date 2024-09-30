@@ -167,6 +167,8 @@ Jenis-Jenis Database:
 - Contoh: MongoDB, Cassandra, Redis.
 
 ### MySQL
+MySQL adalah salah satu jenis RDBMS (Relational Database Management System) yang digunakan untuk membuat dan mengelola database relasional. MySQL merupakan perangkat lunak open-source yang sangat populer dan banyak digunakan dalam aplikasi web, terutama dalam pengembangan aplikasi berbasis PHP (seperti WordPress, Drupal, dan Joomla).
+
 ## Session dan Cookie
 Session dan Cookie merupkan dua metode yang berfungsi untuk menampung informasi tentang pengguna dalam suatu aplikasi web di PHP. Kedua metode ini sering digunakan bersamaan, namun perbedaan utama di antara keduanya adalah cara penyimpanan dan penggunaannya.
 
