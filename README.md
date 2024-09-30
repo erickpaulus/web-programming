@@ -170,9 +170,10 @@ Jenis-Jenis Database:
 MySQL adalah salah satu jenis RDBMS (Relational Database Management System) yang digunakan untuk membuat dan mengelola database relasional. MySQL merupakan perangkat lunak open-source yang sangat populer dan banyak digunakan dalam aplikasi web, terutama dalam pengembangan aplikasi berbasis PHP (seperti WordPress, Drupal, dan Joomla).
 
 Ada 3 cara menghubungan PHP dan MySQL :
-• MySQLi (object-oriented)
-• MySQLi (procedural)
-• PDO
+- MySQLi (object-oriented)
+- MySQLi (procedural)
+- PDO (PHP data object)
+  
 ## Session dan Cookie
 Session dan Cookie merupkan dua metode yang berfungsi untuk menampung informasi tentang pengguna dalam suatu aplikasi web di PHP. Kedua metode ini sering digunakan bersamaan, namun perbedaan utama di antara keduanya adalah cara penyimpanan dan penggunaannya.
 
