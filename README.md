@@ -145,6 +145,10 @@ Fungsi utama PHP dalam pengembangan web:
 - Manajemen Session: Menyimpan informasi pengguna seperti login.
 - Integrasi dengan HTML: PHP mudah diintegrasikan ke dalam HTML untuk menambahkan logika server-side ke halaman web
 
+## Database
+Database adalah kumpulan terstruktur dari data yang disimpan dan diorganisasikan untuk memudahkan akses, pengelolaan, dan pembaruan. Data dalam database bisa berupa informasi apa pun, seperti nama pengguna, alamat email, transaksi penjualan, inventaris barang, dan sebagainya.
+
+### MySQL
 ## Session dan Cookie
 Session dan Cookie merupkan dua metode yang berfungsi untuk menampung informasi tentang pengguna dalam suatu aplikasi web di PHP. Kedua metode ini sering digunakan bersamaan, namun perbedaan utama di antara keduanya adalah cara penyimpanan dan penggunaannya.
 
