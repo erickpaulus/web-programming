@@ -10,8 +10,9 @@ Repositori ini memuat panduan belajar pemrograman web untuk pemula! Panduan ini 
    - [JavaScript](#javascript)
 3. [Teknologi Dasar Server Side Scripting](#teknologi-dasar-server-side-scripting)
    - [PHP](#php)
-4. Database
+4. [Database](#database)
    - [MySQL](#mysql)
+5 [Session dan Cookie](#sessioncookie)
 6. [Framework](#framework)
    - [Laravel](#laravel)
    - [Code Igniter](#code-igniter)
