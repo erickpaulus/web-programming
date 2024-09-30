@@ -148,7 +148,7 @@ Fungsi utama PHP dalam pengembangan web:
 ## Session dan Cookie
 Session dan Cookie merupkan dua metode yang berfungsi untuk menampung informasi tentang pengguna dalam suatu aplikasi web di PHP. Kedua metode ini sering digunakan bersamaan, namun perbedaan utama di antara keduanya adalah cara penyimpanan dan penggunaannya.
 
-1. Session di PHP
+### 1. Session di PHP
 Session adalah mekanisme penyimpanan data yang bersifat sementara untuk melacak data pengguna selama mereka mengunjungi situs. Informasi ini disimpan di server, dan setiap pengguna memiliki ID sesi unik yang disimpan dalam cookie di sisi klien.
 
 Cara Kerja:
@@ -166,6 +166,24 @@ Hal yang Perlu Diperhatikan:
 - Keamanan: Karena session ID disimpan di cookie, pastikan tidak ada serangan session hijacking atau session fixation.
 - Timeout Session: Pastikan mengatur masa aktif sesi agar tidak menyimpan data terlalu lama.
 - Inisialisasi Session: Gunakan session_start() di awal script PHP sebelum output HTML untuk memulai session.
+
+### 2. Cookie di PHP
+Cookie adalah informasi kecil yang disimpan di browser pengguna. Cookie digunakan untuk melacak dan mengidentifikasi pengguna antara sesi kunjungan. Cookie ini dikirimkan dari server ke klien dan disimpan di sisi pengguna (browser).
+
+Cara Kerja:
+- Server mengirim cookie ke klien menggunakan fungsi setcookie() atau setrawcookie().
+- Browser menyimpan cookie ini dan mengirimkannya kembali ke server setiap kali pengguna mengunjungi halaman.
+- Data pada cookie dapat dibaca oleh server atau aplikasi untuk melacak pengguna.
+
+Pentingnya Cookie:
+- Memungkinkan penyimpanan data seperti preferensi pengguna atau status login.
+- Dapat bertahan lebih lama daripada session karena bisa diatur masa aktifnya (misalnya, beberapa hari atau bulan).
+- Cookie digunakan untuk keperluan seperti pelacakan pengguna, iklan, atau preferensi tampilan.
+
+Hal yang Perlu Diperhatikan:
+- Ukuran Cookie: Cookie biasanya dibatasi hingga 4KB per cookie.
+- Keamanan Cookie: Jangan menyimpan informasi sensitif di cookie karena dapat dibaca dan dimanipulasi oleh klien.
+- HTTP Only dan Secure: Gunakan parameter httponly dan secure untuk meningkatkan keamanan cookie (misalnya, hanya mengirim cookie saat HTTPS aktif).
 
 ## Alat Pendukung
 Beberapa alat yang diperlukan untuk membantu pengembangan web:
