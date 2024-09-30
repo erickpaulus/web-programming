@@ -167,6 +167,21 @@ Hal yang Perlu Diperhatikan:
 - Timeout Session: Pastikan mengatur masa aktif sesi agar tidak menyimpan data terlalu lama.
 - Inisialisasi Session: Gunakan session_start() di awal script PHP sebelum output HTML untuk memulai session.
 
+```bash
+<?php
+// Mulai session
+session_start();
+
+// Menyimpan data ke dalam session
+$_SESSION['username'] = "AsepKarasep";
+$_SESSION['role'] = "admin";
+
+// Menampilkan data session
+echo "Username: " . $_SESSION['username'] . "<br>";
+echo "Role: " . $_SESSION['role'];
+?>
+
+```
 ### 2. Cookie di PHP
 Cookie adalah informasi kecil yang disimpan di browser pengguna. Cookie digunakan untuk melacak dan mengidentifikasi pengguna antara sesi kunjungan. Cookie ini dikirimkan dari server ke klien dan disimpan di sisi pengguna (browser).
 
@@ -185,6 +200,19 @@ Hal yang Perlu Diperhatikan:
 - Keamanan Cookie: Jangan menyimpan informasi sensitif di cookie karena dapat dibaca dan dimanipulasi oleh klien.
 - HTTP Only dan Secure: Gunakan parameter httponly dan secure untuk meningkatkan keamanan cookie (misalnya, hanya mengirim cookie saat HTTPS aktif).
 
+```bash
+<?php
+// Menyimpan cookie bernama "user" dengan nilai "asep karasep" yang berlaku selama 1 hari
+setcookie("user", "asep karasep", time() + (86400), "/"); // 86400 detik = 1 hari
+
+// Membaca dan menampilkan cookie jika sudah diset
+if (isset($_COOKIE['user'])) {
+    echo "User: " . $_COOKIE['user'];
+} else {
+    echo "Cookie 'user' belum diset!";
+}
+?>
+```
 ## Alat Pendukung
 Beberapa alat yang diperlukan untuk membantu pengembangan web:
 
