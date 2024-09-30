@@ -10,13 +10,15 @@ Repositori ini memuat panduan belajar pemrograman web untuk pemula! Panduan ini 
    - [JavaScript](#javascript)
 3. [Teknologi Dasar Server Side Scripting](#teknologi-dasar-server-side-scripting)
    - [PHP](#php)
-4. [Framework](#framework)
+4. Database
+   - [MySQL](#mysql)
+6. [Framework](#framework)
    - [Laravel](#laravel)
    - [Code Igniter](#code-igniter)
-5. [Alat Pendukung](#alat-pendukung)
-6. [Langkah-Langkah Belajar](#langkah-langkah-belajar)
-7. [Membuat Proyek Web Sederhana](#membuat-proyek-web-sederhana)
-8. [Bahan bacaan](#bahan-bacaan)
+7. [Alat Pendukung](#alat-pendukung)
+8. [Langkah-Langkah Belajar](#langkah-langkah-belajar)
+9. [Membuat Proyek Web Sederhana](#membuat-proyek-web-sederhana)
+10. [Bahan bacaan](#bahan-bacaan)
 ---
 
 ## Pengantar
@@ -142,6 +144,8 @@ Fungsi utama PHP dalam pengembangan web:
 - Manajemen Session: Menyimpan informasi pengguna seperti login.
 - Integrasi dengan HTML: PHP mudah diintegrasikan ke dalam HTML untuk menambahkan logika server-side ke halaman web
 
+## Session dan Cookie
+Session dan Cookie adalah dua cara yang digunakan untuk menyimpan informasi tentang pengguna dalam sebuah aplikasi web di PHP. Meskipun sering digunakan bersamaan, ada perbedaan utama di antara keduanya dalam cara penyimpanan dan penggunaannya.
 
 ## Alat Pendukung
 Beberapa alat yang diperlukan untuk membantu pengembangan web:
