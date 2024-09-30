@@ -12,7 +12,7 @@ Repositori ini memuat panduan belajar pemrograman web untuk pemula! Panduan ini 
    - [PHP](#php)
 4. [Database](#database)
    - [MySQL](#mysql)
-5 [Session dan Cookie](#sessioncookie)
+5. [Session dan Cookie](#session-dan-cookie)
 6. [Framework](#framework)
    - [Laravel](#laravel)
    - [Code Igniter](#code-igniter)
@@ -146,7 +146,26 @@ Fungsi utama PHP dalam pengembangan web:
 - Integrasi dengan HTML: PHP mudah diintegrasikan ke dalam HTML untuk menambahkan logika server-side ke halaman web
 
 ## Session dan Cookie
-Session dan Cookie adalah dua cara yang digunakan untuk menyimpan informasi tentang pengguna dalam sebuah aplikasi web di PHP. Meskipun sering digunakan bersamaan, ada perbedaan utama di antara keduanya dalam cara penyimpanan dan penggunaannya.
+Session dan Cookie merupkan dua metode yang berfungsi untuk menampung informasi tentang pengguna dalam suatu aplikasi web di PHP. Kedua metode ini sering digunakan bersamaan, namun perbedaan utama di antara keduanya adalah cara penyimpanan dan penggunaannya.
+
+1. Session di PHP
+Session adalah mekanisme penyimpanan data yang bersifat sementara untuk melacak data pengguna selama mereka mengunjungi situs. Informasi ini disimpan di server, dan setiap pengguna memiliki ID sesi unik yang disimpan dalam cookie di sisi klien.
+
+Cara Kerja:
+- Ketika pengguna pertama kali mengunjungi situs, PHP membuat session ID yang unik.
+- Session ID ini dikirim ke pengguna dalam bentuk cookie yang disebut PHPSESSID.
+- Informasi spesifik pengguna disimpan di server berdasarkan session ID ini.
+- Selama kunjungan, setiap request dari pengguna akan mencocokkan session ID ini untuk mengakses data yang disimpan.
+
+Pentingnya Session:
+- Data disimpan di server, sehingga lebih aman dibandingkan menyimpan data di sisi klien.
+- Session bisa menyimpan data yang kompleks seperti array dan objek.
+- Berguna untuk menyimpan data sementara seperti login status, keranjang belanja, atau preferensi pengguna.
+
+Hal yang Perlu Diperhatikan:
+- Keamanan: Karena session ID disimpan di cookie, pastikan tidak ada serangan session hijacking atau session fixation.
+- Timeout Session: Pastikan mengatur masa aktif sesi agar tidak menyimpan data terlalu lama.
+- Inisialisasi Session: Gunakan session_start() di awal script PHP sebelum output HTML untuk memulai session.
 
 ## Alat Pendukung
 Beberapa alat yang diperlukan untuk membantu pengembangan web:
