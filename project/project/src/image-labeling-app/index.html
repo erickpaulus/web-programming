@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Labeling Application</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin: 20px;
+            background-color: #f4f4f4;
+        }
+        #app {
+            max-width: 800px;
+            text-align: center;
+        }
+        #imageCanvas {
+            border: 1px solid #ccc;
+            margin-top: 20px;
+            cursor: crosshair;
+        }
+        #labelsList {
+            margin-top: 20px;
+            max-height: 200px;
+            overflow-y: auto;
+            background: #eee;
+            padding: 10px;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <div id="app">
+        <h2>Image Labeling Application</h2>
+        <!-- Image Upload Section -->
+        <form id="uploadForm" method="POST" enctype="multipart/form-data">
+            <input type="file" name="image" id="imageInput" accept="image/*" required>
+            <button type="submit">Upload Image</button>
+        </form>
+
+        <!-- Image and Labeling Section -->
+        <!-- <div id="labelingContainer">
+            <canvas id="imageCanvas"></canvas>
+        </div> -->
+
+        <div id="labelingContainer" style="overflow: auto; width: 1000px; height: 300px;">
+            <canvas id="imageCanvas" width="1000" height="300"></canvas>
+        </div>
+
+        <!-- Label Information -->
+        <div id="labelsList">
+            <h3>Annotations</h3>
+        </div>
+        
+        <!-- Export Button -->
+        <button onclick="exportToJSON()">Export Labels as JSON</button>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>

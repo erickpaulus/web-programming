@@ -1,0 +1,26 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    margin: 0;
+}
+
+.animated-box {
+    width: 200px;
+    height: 200px;
+    background-color: #3498db;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 1.2em;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    will-change: transform, opacity; /* Hinting the browser for optimization */
+}
+
+.animated-box:hover {
+    transform: translateY(-20px) scale(1.1); /* This will use GPU acceleration */
+    opacity: 0.8; /* Also GPU accelerated */
+}

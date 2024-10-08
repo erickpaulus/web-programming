@@ -1,0 +1,33 @@
+version: '3.8'
+
+services:
+  web:
+    image: php:8.0-apache   # You can change the PHP version if needed
+    container_name: php-app
+    volumes:
+      - ./src:/var/www/html  # Mount your PHP source code
+    ports:
+      - "8080:80"            # Expose port 80 of the container as 8080
+    depends_on:
+      - db
+    networks:
+      - app-network
+
+  db:
+    image: mysql:5.7         # MySQL version 5.7
+    container_name: mysql-db
+    environment:
+      MYSQL_ROOT_PASSWORD: rootpassword   # Set a root password
+      MYSQL_DATABASE: app_db              # Initial database
+      MYSQL_USER: user                    # Database user
+      MYSQL_PASSWORD: password            # Database password
+    volumes:
+      - db-data:/var/lib/mysql            # Persist MySQL data
+    networks:
+      - app-network
+
+volumes:
+  db-data:
+
+networks:
+  app-network:

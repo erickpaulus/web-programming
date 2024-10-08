@@ -1,0 +1,26 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #f4f4f4;
+}
+
+#app {
+    max-width: 800px;
+}
+
+#labelingContainer {
+    border: 1px solid #ddd;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+#labelsList {
+    margin-top: 20px;
+}
+
+button {
+    margin-top: 10px;
+}
