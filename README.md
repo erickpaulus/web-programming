@@ -10,13 +10,16 @@ Repositori ini memuat panduan belajar pemrograman web untuk pemula! Panduan ini 
    - [JavaScript](#javascript)
 3. [Teknologi Dasar Server Side Scripting](#teknologi-dasar-server-side-scripting)
    - [PHP](#php)
-4. [Framework](#framework)
+4. [Database](#database)
+   - [MySQL](#mysql)
+5. [Session dan Cookie](#session-dan-cookie)
+6. [Framework](#framework)
    - [Laravel](#laravel)
    - [Code Igniter](#code-igniter)
-5. [Alat Pendukung](#alat-pendukung)
-6. [Langkah-Langkah Belajar](#langkah-langkah-belajar)
-7. [Membuat Proyek Web Sederhana](#membuat-proyek-web-sederhana)
-8. [Bahan bacaan](#bahan-bacaan)
+7. [Alat Pendukung](#alat-pendukung)
+8. [Langkah-Langkah Belajar](#langkah-langkah-belajar)
+9. [Membuat Proyek Web Sederhana](#membuat-proyek-web-sederhana)
+10. [Bahan bacaan](#bahan-bacaan)
 ---
 
 ## Pengantar
@@ -142,7 +145,103 @@ Fungsi utama PHP dalam pengembangan web:
 - Manajemen Session: Menyimpan informasi pengguna seperti login.
 - Integrasi dengan HTML: PHP mudah diintegrasikan ke dalam HTML untuk menambahkan logika server-side ke halaman web
 
+## Database
+Database adalah kumpulan terstruktur dari data yang disimpan dan diorganisasikan untuk memudahkan akses, pengelolaan, dan pembaruan. Data dalam database bisa berupa informasi apa pun, seperti nama pengguna, alamat email, transaksi penjualan, inventaris barang, dan sebagainya.
 
+Karakteristik Utama Database:
+- Penyimpanan Terstruktur: Database dirancang untuk menyimpan data secara terstruktur, biasanya dalam bentuk tabel yang terdiri dari baris dan kolom (relasional) atau dalam format lain seperti dokumen atau key-value (non-relasional).
+- Manajemen Data: Database memungkinkan pengguna untuk menambah, menghapus, memperbarui, atau menelusuri data dengan mudah menggunakan perintah yang disediakan.
+- Integritas Data: Database menjamin bahwa data yang disimpan akurat dan sesuai dengan aturan tertentu (misalnya, kunci unik atau kunci asing).
+- Keamanan: Akses ke database dapat diatur dengan izin tertentu, memastikan bahwa hanya pengguna yang berhak yang dapat melihat atau mengubah data.
+
+Jenis-Jenis Database:
+1. Database Relasional (RDBMS):
+- Menggunakan tabel untuk menyimpan data.
+- Setiap tabel memiliki baris (record) dan kolom (field).
+- Menggunakan SQL (Structured Query Language) untuk melakukan operasi pada data.
+- Contoh: MySQL, PostgreSQL, Microsoft SQL Server, Oracle.
+
+2. Database Non-Relasional (NoSQL):
+- Tidak menggunakan tabel relasional; bisa berbentuk dokumen, key-value, graph, atau wide-column.
+- Cocok untuk data yang tidak terstruktur atau semi-terstruktur.
+- Contoh: MongoDB, Cassandra, Redis.
+
+### MySQL
+MySQL adalah salah satu jenis RDBMS (Relational Database Management System) yang digunakan untuk membuat dan mengelola database relasional. MySQL merupakan perangkat lunak open-source yang sangat populer dan banyak digunakan dalam aplikasi web, terutama dalam pengembangan aplikasi berbasis PHP (seperti WordPress, Drupal, dan Joomla).
+
+Ada 3 cara menghubungan PHP dan MySQL :
+- MySQLi (object-oriented)
+- MySQLi (procedural)
+- PDO (PHP data object)
+  
+## Session dan Cookie
+Session dan Cookie merupkan dua metode yang berfungsi untuk menampung informasi tentang pengguna dalam suatu aplikasi web di PHP. Kedua metode ini sering digunakan bersamaan, namun perbedaan utama di antara keduanya adalah cara penyimpanan dan penggunaannya.
+
+### 1. Session di PHP
+Session adalah mekanisme penyimpanan data yang bersifat sementara untuk melacak data pengguna selama mereka mengunjungi situs. Informasi ini disimpan di server, dan setiap pengguna memiliki ID sesi unik yang disimpan dalam cookie di sisi klien.
+
+Cara Kerja:
+- Ketika pengguna pertama kali mengunjungi situs, PHP membuat session ID yang unik.
+- Session ID ini dikirim ke pengguna dalam bentuk cookie yang disebut PHPSESSID.
+- Informasi spesifik pengguna disimpan di server berdasarkan session ID ini.
+- Selama kunjungan, setiap request dari pengguna akan mencocokkan session ID ini untuk mengakses data yang disimpan.
+
+Pentingnya Session:
+- Data disimpan di server, sehingga lebih aman dibandingkan menyimpan data di sisi klien.
+- Session bisa menyimpan data yang kompleks seperti array dan objek.
+- Berguna untuk menyimpan data sementara seperti login status, keranjang belanja, atau preferensi pengguna.
+
+Hal yang Perlu Diperhatikan:
+- Keamanan: Karena session ID disimpan di cookie, pastikan tidak ada serangan session hijacking atau session fixation.
+- Timeout Session: Pastikan mengatur masa aktif sesi agar tidak menyimpan data terlalu lama.
+- Inisialisasi Session: Gunakan session_start() di awal script PHP sebelum output HTML untuk memulai session.
+
+```bash
+<?php
+// Mulai session
+session_start();
+
+// Menyimpan data ke dalam session
+$_SESSION['username'] = "AsepKarasep";
+$_SESSION['role'] = "admin";
+
+// Menampilkan data session
+echo "Username: " . $_SESSION['username'] . "<br>";
+echo "Role: " . $_SESSION['role'];
+?>
+
+```
+### 2. Cookie di PHP
+Cookie adalah informasi kecil yang disimpan di browser pengguna. Cookie digunakan untuk melacak dan mengidentifikasi pengguna antara sesi kunjungan. Cookie ini dikirimkan dari server ke klien dan disimpan di sisi pengguna (browser).
+
+Cara Kerja:
+- Server mengirim cookie ke klien menggunakan fungsi setcookie() atau setrawcookie().
+- Browser menyimpan cookie ini dan mengirimkannya kembali ke server setiap kali pengguna mengunjungi halaman.
+- Data pada cookie dapat dibaca oleh server atau aplikasi untuk melacak pengguna.
+
+Pentingnya Cookie:
+- Memungkinkan penyimpanan data seperti preferensi pengguna atau status login.
+- Dapat bertahan lebih lama daripada session karena bisa diatur masa aktifnya (misalnya, beberapa hari atau bulan).
+- Cookie digunakan untuk keperluan seperti pelacakan pengguna, iklan, atau preferensi tampilan.
+
+Hal yang Perlu Diperhatikan:
+- Ukuran Cookie: Cookie biasanya dibatasi hingga 4KB per cookie.
+- Keamanan Cookie: Jangan menyimpan informasi sensitif di cookie karena dapat dibaca dan dimanipulasi oleh klien.
+- HTTP Only dan Secure: Gunakan parameter httponly dan secure untuk meningkatkan keamanan cookie (misalnya, hanya mengirim cookie saat HTTPS aktif).
+
+```bash
+<?php
+// Menyimpan cookie bernama "user" dengan nilai "asep karasep" yang berlaku selama 1 hari
+setcookie("user", "asep karasep", time() + (86400), "/"); // 86400 detik = 1 hari
+
+// Membaca dan menampilkan cookie jika sudah diset
+if (isset($_COOKIE['user'])) {
+    echo "User: " . $_COOKIE['user'];
+} else {
+    echo "Cookie 'user' belum diset!";
+}
+?>
+```
 ## Alat Pendukung
 Beberapa alat yang diperlukan untuk membantu pengembangan web:
 
